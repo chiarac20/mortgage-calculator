@@ -1,0 +1,54 @@
+#body {
+    font-size: 18px;
+    color: darkblue;
+    background-color: rgb(217, 239, 252);
+    margin: 25px;
+}
+.input-line {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.display-none {
+    display: none;
+}
+
+button, input {
+    margin: 5px;
+    font-size: 16px;
+    color: darkblue;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 15vw;
+}
+#sustainable-mortgage-question,
+#minimum-instalment,
+#years-to-pay-off {
+    margin:20px;
+}
+
+#instruction-debt-variation {
+    margin-left: 20px;
+}
+
+ol > :last-child {
+    font-size: 25px;
+    color: red;
+    border-bottom: 2px green solid;
+}
+
+ol > :first-child {
+    border-top: 2px green solid;
+}
+
+li {
+    font-size: 20px;
+    border-top: 1px green solid;
+    border-bottom: 1px green solid;
+    background-color: honeydew;
+    padding: 10px;
+    width: 25vw;
+    border-right: 2px green solid;
+    border-left: 2px green solid;
+}

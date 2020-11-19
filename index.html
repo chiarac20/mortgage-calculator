@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage-calculator</title>
+    <script src="index.js" async defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+    <form id="form">
+        <label for="input-mortgage" class="input-line"> Mortgage value     
+            <input type="number" name="input-mortgage" id="input-mortgage" value="100000" min="50000" max="500000" step="10000"> £
+        </label>
+        <label for="input-interest" class="input-line"> Annual Interest Rate
+            <input type="number" name="input-interest" id="input-interest" value="1.00" min="0.50" max="10" step="0.01"> %
+        </label>
+        <label for="input-instalment" class="input-line"> Monthly instalment
+            <input type="number" name="input-instalment" id="input-instalment" value="200" min="50" step="10"> £
+        </label>
+        <button type="submit"> Submit </button>
+    </form>
+    <div class="display-none" id="sustainable-mortgage-question">
+        Is your mortgage sustainable? 
+        <span id="sustainable-mortgage-answer"></span>
+        <div id="minimum-instalment" class="display-none"> Your minimum instalment is £
+            <span id="min-instalment-value"></span>
+        </div>
+    </div>
+    <div id="years-to-pay-off" class="display-none"></div>
+    <div id ="instruction-debt-variation" class="display-none">
+        Please find below your debt variations for maximum 50 years: 
+    </div>
+    <ol id=debt-variation> </ol>
+</body>
+</html>
